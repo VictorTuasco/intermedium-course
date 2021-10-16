@@ -43,9 +43,9 @@ namespace intermedium_course
             string monthAndYear = Console.ReadLine();
             int month = int.Parse(monthAndYear.Substring(0, 2));
             int year = int.Parse(monthAndYear.Substring(3));
-            Console.WriteLine("Name" + worker.Name);
-            Console.WriteLine("Departament" + worker.Departament.Name);
-            Console.WriteLine("Income for: " + monthAndYear + ": " + worker.Income(year, month));
+            Console.WriteLine("Name: " + worker.Name);
+            Console.WriteLine("Departament: " + worker.Departament.Name);
+            Console.WriteLine("Income for: " + monthAndYear + ": " + worker.Income(year, month).ToString("F2"), CultureInfo.InvariantCulture);
         }
     }
 }
